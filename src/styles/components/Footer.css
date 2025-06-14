@@ -1,0 +1,128 @@
+/* Footer Styles */
+.footer {
+  background-color: var(--color-text-primary);
+  color: var(--color-background);
+  margin-top: auto;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  padding: var(--space-12) 0;
+}
+
+@media (min-width: 768px) {
+  .footer__content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__content {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Footer Info */
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.footer__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-background);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer__description {
+  color: var(--color-text-muted);
+  line-height: var(--line-height-relaxed);
+  max-width: 400px;
+}
+
+/* Footer Links */
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 640px) {
+  .footer__links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer__section-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-background);
+  margin-bottom: var(--space-2);
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.footer__link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  transition: color var(--transition-fast);
+  display: inline-block;
+}
+
+.footer__link:hover {
+  color: var(--color-primary);
+}
+
+/* Footer Bottom */
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-6) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.footer__copyright {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.footer__tech {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin: 0;
+  font-family: var(--font-family-mono);
+}

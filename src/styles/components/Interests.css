@@ -1,0 +1,330 @@
+/* Interests Page Styles */
+.interests {
+  padding: var(--space-12) 0;
+  min-height: 100vh;
+}
+
+.interests__header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-8);
+  border-bottom: 1px solid var(--color-border);
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: var(--space-4) var(--space-6);
+  background: none;
+  border: none;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.tab-button:hover {
+  color: var(--color-primary);
+  background-color: rgba(37, 99, 235, 0.05);
+}
+
+.tab-button--active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+/* Tab Content */
+.tab-content {
+  min-height: 600px;
+}
+
+.tab-content h2 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-4);
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.section-description {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-8);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: var(--line-height-relaxed);
+}
+
+/* Items Grid */
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .items-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .items-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Item Card */
+.item-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-base);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.item-image {
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.item-image:hover img {
+  transform: scale(1.05);
+}
+
+.item-content {
+  padding: var(--space-6);
+}
+
+.item-title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-2);
+  color: var(--color-text-primary);
+}
+
+.item-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+  font-weight: var(--font-weight-medium);
+}
+
+.item-description {
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-4);
+  font-size: var(--font-size-sm);
+}
+
+/* Rating */
+.rating {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.star {
+  color: var(--color-border);
+  font-size: var(--font-size-base);
+  transition: color var(--transition-fast);
+}
+
+.star--filled {
+  color: var(--color-accent);
+}
+
+/* Hobbies Grid */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .hobbies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hobbies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Hobby Card */
+.hobby-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-base);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.hobby-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hobby-image {
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hobby-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.hobby-image:hover img {
+  transform: scale(1.05);
+}
+
+.hobby-content {
+  padding: var(--space-6);
+}
+
+.hobby-title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-3);
+  color: var(--color-text-primary);
+}
+
+.hobby-description {
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-4);
+  font-size: var(--font-size-sm);
+}
+
+.hobby-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.hobby-tag {
+  padding: var(--space-1) var(--space-3);
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Lightbox */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-modal);
+  padding: var(--space-4);
+  cursor: pointer;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  animation: lightboxFadeIn 0.3s ease-out;
+}
+
+@keyframes lightboxFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.lightbox-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: var(--radius-full);
+  color: white;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  backdrop-filter: blur(4px);
+}
+
+.lightbox-close:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .tab-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-button {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    border-radius: var(--radius-md);
+    border-bottom: none;
+    margin-bottom: var(--space-1);
+  }
+  
+  .tab-button--active {
+    border-bottom: none;
+    background-color: var(--color-primary);
+    color: white;
+  }
+  
+  .lightbox-close {
+    top: var(--space-4);
+    right: var(--space-4);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
