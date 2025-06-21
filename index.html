@@ -1,13 +1,138 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>自己紹介</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中島央貴のポートフォリオ</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo">中島央貴</h1>
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">ホーム</a></li>
+                <li><a href="about.html">自己紹介</a></li>
+                <li><a href="skills.html">スキル</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main">
+        <!-- ホームセクション -->
+        <section class="hero-section">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">こんにちは！</h1>
+                    <p class="hero-subtitle">私は<span class="highlight">中島央貴</span>です</p>
+                    <p class="hero-description">エンジニアを目指して学習中です</p>
+                    <div class="typing-text">
+                        <span id="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="about.html" class="btn">もっと見る</a>
+                        <a href="contact.html" class="btn btn-outline">お問い合わせ</a>
+                    </div>
+                </div>
+                
+                <!-- ヒーロー画像エリア -->
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <div class="card-icon">💻</div>
+                        <h4>Web開発</h4>
+                        <p>HTML/CSS/JavaScript</p>
+                    </div>
+                    <div class="floating-card">
+                        <div class="card-icon">⚛️</div>
+                        <h4>React</h4>
+                        <p>モダンなフレームワーク</p>
+                    </div>
+                    <div class="floating-card">
+                        <div class="card-icon">🎨</div>
+                        <h4>UI/UX</h4>
+                        <p>ユーザー体験重視</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- スクロールインジケーター -->
+            <div class="scroll-indicator">
+                <span>もっと見る</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- 概要セクション -->
+        <section class="overview-section">
+            <div class="container">
+                <h2 class="section-title">私について</h2>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="overview-icon">🎓</div>
+                        <h3>学習中</h3>
+                        <p>京都デザイン&テクノロジー専門学校でITプログラマー専攻を学んでいます。</p>
+                        <a href="about.html" class="card-link">詳しく見る →</a>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="overview-icon">💡</div>
+                        <h3>技術スキル</h3>
+                        <p>HTML/CSS、JavaScript、Reactなど、Webフロントエンド技術を中心に学習しています。</p>
+                        <a href="skills.html" class="card-link">スキル一覧 →</a>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="overview-icon">🚀</div>
+                        <h3>目標</h3>
+                        <p>ユーザーにとって使いやすく、美しいWebアプリケーションを作ることを目標としています。</p>
+                        <a href="about.html#goals" class="card-link">目標を見る →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新情報セクション -->
+        <section class="updates-section">
+            <div class="container">
+                <h2 class="section-title">最新の学習状況</h2>
+                <div class="updates-grid">
+                    <div class="update-item">
+                        <div class="update-date">2025.01</div>
+                        <div class="update-content">
+                            <h4>Reactの学習を開始</h4>
+                            <p>コンポーネントベースの開発手法を学び、実際にポートフォリオサイトを作成中です。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="update-item">
+                        <div class="update-date">2024.12</div>
+                        <div class="update-content">
+                            <h4>JavaScript ES6+完了</h4>
+                            <p>モダンなJavaScript構文をマスターし、非同期処理についても理解を深めました。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="update-item">
+                        <div class="update-date">2024.11</div>
+                        <div class="update-content">
+                            <h4>CSS GridとFlexboxを習得</h4>
+                            <p>レスポンシブデザインの実装スキルを向上させ、実際のプロジェクトで活用しています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <p>&copy; 2025 中島央貴. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
 </html>

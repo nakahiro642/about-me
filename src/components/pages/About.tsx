@@ -20,19 +20,19 @@ const About: React.FC = () => {
 
   const experiences = [
     {
+      year: '2025',
+      title: '京都デザイン&テクノロジー専門学校入学',
+      description: '全授業真面目に受けています。(夢の中で)'
+    },
+    {
+      year: '2025',
+      title: '京都共栄学園卒業',
+      description: 'いい高校でしたね。'
+    },
+    {
       year: '2024',
-      title: 'フロントエンド学習開始',
-      description: 'ReactとTypeScriptを中心とした学習を開始。現代的なWeb開発手法を習得中。'
-    },
-    {
-      year: '2023',
       title: 'プログラミング学習開始',
-      description: 'HTML、CSS、JavaScriptの基礎から学習をスタート。Web技術の基盤を固める。'
-    },
-    {
-      year: '2022',
-      title: '大学入学',
-      description: 'コンピューターサイエンス分野での学習を開始。理論と実践のバランスを重視。'
+      description: 'C言語を少し学んでいました。'
     }
   ];
 
@@ -88,8 +88,8 @@ const About: React.FC = () => {
                 <div className="profile-text">
                   <h2>こんにちは！</h2>
                   <p>
-                    私は田中太郎と申します。現在、フロントエンドエンジニアを目指して学習を進めています。
-                    特にReactとTypeScriptを中心とした現代的なWeb開発に興味を持っています。
+                    私は中島央貴です。現在、エンジニアを目指して学習を進めています。
+                    意外とちょけます。
                   </p>
                   
                   <h3>興味・関心</h3>
@@ -117,13 +117,13 @@ const About: React.FC = () => {
                     <h4>基本情報</h4>
                     <dl className="info-list">
                       <dt>名前</dt>
-                      <dd>田中太郎</dd>
+                      <dd>中島央貴</dd>
                       <dt>所在地</dt>
-                      <dd>東京都</dd>
-                      <dt>学習分野</dt>
-                      <dd>フロントエンド開発</dd>
+                      <dd>京都府</dd>
+                      <dt>専攻</dt>
+                      <dd>ITプログラマー専攻</dd>
                       <dt>趣味</dt>
-                      <dd>読書、音楽、映画鑑賞</dd>
+                      <dd>ゲーム、思いっきり寝ること</dd>
                     </dl>
                   </div>
                 </div>

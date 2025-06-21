@@ -4,6 +4,12 @@
 
 ReactとTypeScriptを使用して作成した個人ポートフォリオサイトです。
 
+## 🌐 デプロイ
+
+GitHub Pagesでデプロイされています。
+- **サイトURL**: https://[username].github.io/about-me/
+- **自動デプロイ**: mainブランチへのpushで自動デプロイ
+
 ## 🚀 技術スタック
 
 - **フロントエンド**: React 19.1.0

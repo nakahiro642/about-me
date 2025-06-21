@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - 中島央貴のポートフォリオ</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo">中島央貴</h1>
+            <ul class="nav-list">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">自己紹介</a></li>
+                <li><a href="skills.html">スキル</a></li>
+                <li><a href="contact.html" class="active">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main">
+        <section class="page-section">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="page-title">お問い合わせ</h1>
+                    <p class="page-subtitle">お気軽にご連絡ください</p>
+                </div>
+                
+                <div class="contact-layout">
+                    <!-- お問い合わせフォーム -->
+                    <div class="contact-form-section">
+                        <h2>メッセージを送る</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">お名前 <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" required placeholder="山田太郎">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">メールアドレス <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">件名</label>
+                                <select id="subject" name="subject">
+                                    <option value="">件名を選択してください</option>
+                                    <option value="work">お仕事のご相談</option>
+                                    <option value="study">学習・技術について</option>
+                                    <option value="collaboration">コラボレーション</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">メッセージ <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" required placeholder="こちらにメッセージをご記入ください..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">
+                                        プライバシーポリシーに同意します <span class="required">*</span>
+                                    </span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span class="btn-text">送信する</span>
+                                <span class="btn-loading" style="display: none;">送信中...</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- 連絡先情報 -->
+                    <div class="contact-info-section">
+                        <h2>連絡先情報</h2>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h4>メール</h4>
+                                    <p>nakajima.hisaki@example.com</p>
+                                    <span class="contact-note">24時間以内に返信いたします</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-details">
+                                    <h4>SNS</h4>
+                                    <div class="social-links">
+                                        <a href="#" class="social-link">
+                                            <span>💻</span>
+                                            <span>GitHub</span>
+                                        </a>
+                                        <a href="#" class="social-link">
+                                            <span>🐦</span>
+                                            <span>Twitter</span>
+                                        </a>
+                                        <a href="#" class="social-link">
+                                            <span>💼</span>
+                                            <span>LinkedIn</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">🕐</div>
+                                <div class="contact-details">
+                                    <h4>対応時間</h4>
+                                    <p>平日 9:00 - 18:00</p>
+                                    <span class="contact-note">土日祝日は返信が遅れる場合があります</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h4>所在地</h4>
+                                    <p>京都府</p>
+                                    <span class="contact-note">リモートでの対応可能</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- よくある質問 -->
+                        <div class="faq-section">
+                            <h3>よくある質問</h3>
+                            <div class="faq-items">
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>🤔 どのような案件に対応できますか？</h4>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>現在学習中のため、小規模なWebサイト制作や学習プロジェクトへの参加を希望しています。HTML/CSS/JavaScriptを使用したサイト制作が可能です。</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>💰 料金はどのくらいですか？</h4>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>学習段階のため、実践経験を積むことを優先し、相談に応じます。お気軽にお問い合わせください。</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>⏰ 制作期間はどのくらいですか？</h4>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>プロジェクトの規模により異なりますが、学業との両立を考慮し、1-4週間程度を想定しています。</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>🎓 学習中ですが大丈夫ですか？</h4>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>はい。学習した技術を実際のプロジェクトで活用し、責任を持って取り組みます。不明点は積極的に調べ、質の高い成果物を目指します。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 送信完了メッセージ -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <div class="success-content">
+                        <div class="success-icon">✅</div>
+                        <h3>メッセージを送信しました！</h3>
+                        <p>お問い合わせありがとうございます。<br>24時間以内に返信いたします。</p>
+                        <button class="btn btn-outline" onclick="hideSuccessMessage()">閉じる</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>中島央貴</h4>
+                <p>Future Engineer</p>
+            </div>
+            <div class="footer-section">
+                <h4>ページ</h4>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">自己紹介</a></li>
+                    <li><a href="skills.html">スキル</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>SNS</h4>
+                <div class="footer-social">
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 中島央貴. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

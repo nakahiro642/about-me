@@ -8,9 +8,9 @@ const Home: React.FC = () => {
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
   
   const messages = useMemo(() => [
-    'フロントエンドエンジニアを目指しています',
-    'React & TypeScriptが好きです',
-    'ユーザー体験を大切にしています'
+    '睡眠不足です',
+    '早く帰りたいです',
+    '生理欲求には逆らえません'
   ], []);
 
   // タイピングエフェクト
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
           <div className="hero__content">
             <h1 className="hero__title fade-in">
               こんにちは！<br />
-              私の名前は<span className="hero__name">田中太郎</span>です
+              私の名前は<span className="hero__name">中島央貴</span>です
             </h1>
             <div className="hero__typing">
               <p className="typing-text">{displayText}<span className="cursor">|</span></p>
