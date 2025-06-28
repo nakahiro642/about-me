@@ -2,9 +2,9 @@
 function typeWriter() {
     const messages = [
         "Web開発を学んでいます",
-        "フロントエンドが好きです", 
-        "ユーザー体験を大切にします",
-        "毎日コードを書いています"
+        "睡眠不足です", 
+        "UI/UXのプレゼン苦手です",
+        "たまにコードを書いています"
     ];
     
     let messageIndex = 0;
@@ -16,7 +16,8 @@ function typeWriter() {
     
     function type() {
         const currentMessage = messages[messageIndex];
-        
+        if (!currentMessage) return;
+
         if (isDeleting) {
             typedElement.textContent = currentMessage.substring(0, charIndex - 1);
             charIndex--;

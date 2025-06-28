@@ -8,9 +8,9 @@ const Home: React.FC = () => {
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
   
   const messages = useMemo(() => [
-    '睡眠不足です',
-    '早く帰りたいです',
-    '生理欲求には逆らえません'
+    '出席率100%です',
+    'ゲームと寝ることが趣味です',
+    'ジャンクフードが大好きです',
   ], []);
 
   // タイピングエフェクト
@@ -71,7 +71,7 @@ const Home: React.FC = () => {
           </div>
           <div className="hero__image">
             <img 
-              src="https://via.placeholder.com/400x400/2563eb/ffffff?text=Profile" 
+              src="my-face.jpg" 
               alt="プロフィール画像" 
               className="profile-image"
             />
@@ -174,9 +174,9 @@ const Home: React.FC = () => {
       <section className="cta py-16">
         <div className="container">
           <div className="cta__content text-center">
-            <h2 className="cta__title">一緒にプロジェクトを作りませんか？</h2>
+            <h2 className="cta__title">私に質問等がありますか？</h2>
             <p className="cta__description">
-              新しいアイデアや技術に興味があります。お気軽にお声がけください。
+              お気軽にご連絡ください
             </p>
             <Link to="/contact" className="btn btn-primary">
               お問い合わせ

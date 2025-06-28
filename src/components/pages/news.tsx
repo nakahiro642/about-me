@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles/components/Portfolio.css';
+import '../../styles/components/news.css';
 
 interface Project {
   id: number;

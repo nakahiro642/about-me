@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中島央貴のポートフォリオ</title>
+    <meta name="description" content="システムエンジニアを目指して学習中の中島央貴のポートフォリオサイトです。" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+                    </div>
+                    <div class="floating-card">
+                        <div class="card-icon">🎨</div>
+                        <h4>UI/UX</h4>
+                        <p>ユーザー体験重視</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- スクロールインジケーター -->
+            <div class="scroll-indicator">
+                <span>もっと見る</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- 概要セクション -->
+        <section class="overview-section">
+            <div class="container">
+                <h2 class="section-title">私について</h2>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="overview-icon">🎓</div>
+                        <h3>学習中</h3>
+                        <p>京都デザイン&テクノロジー専門学校でITプログラマー専攻に所属しています。</p>
+                        <a href="about.html" class="card-link">詳しく見る →</a>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="overview-icon">💡</div>
+                        <h3>趣味</h3>
+                        <p>ゲーム、寝ること、アニメ鑑賞</p>
+                        <a href="skills.html" class="card-link">詳しく見る →</a>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="overview-icon">🚀</div>
+                        <h3>目標</h3>
+                        <p>高度技術を身に付け、システムエンジニアとして活躍することを目指しています。</p>
+                        <a href="about.html#goals" class="card-link">目標を見る →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新情報セクション -->
+        <section class="updates-section">
+            <div class="container">
+                <h2 class="section-title">私の経歴</h2>
+                <div class="updates-grid">
+                    <div class="update-item">
+                        <div class="update-date">2025.04</div>
+                        <div class="update-content">
+                            <h4>京都デザイン&テクノロジー専門学校入学</h4>
+                            <p>毎授業真面目に取り組んでいます。(夢の中で)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="update-item">
+                        <div class="update-date">2025.03</div>
+                        <div class="update-content">
+                            <h4>京都共栄学園卒業</h4>
+                            <p>駅近の学校でした。よく学校帰りマックに寄ってました。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="update-item">
+                        <div class="update-date">2024.09</div>
+                        <div class="update-content">
+                            <h4>アルバイトを始めた</h4>
+                            <p>店長がイケメンです。かなりホワイト。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <p>&copy; 2025 中島央貴. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

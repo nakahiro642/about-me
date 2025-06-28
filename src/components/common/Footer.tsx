@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/components/Footer.css';
 
 const Footer: React.FC = () => {
@@ -19,11 +20,11 @@ const Footer: React.FC = () => {
             <div className="footer__section">
               <h4 className="footer__section-title">サイトマップ</h4>
               <ul className="footer__list">
-                <li><a href="/" className="footer__link">ホーム</a></li>
-                <li><a href="/about" className="footer__link">自己紹介</a></li>
-                <li><a href="/portfolio" className="footer__link">ポートフォリオ</a></li>
-                <li><a href="/interests" className="footer__link">趣味・興味</a></li>
-                <li><a href="/contact" className="footer__link">お問い合わせ</a></li>
+                <li><Link to="/" className="footer__link">ホーム</Link></li>
+                <li><Link to="/about" className="footer__link">自己紹介</Link></li>
+                <li><Link to="/portfolio" className="footer__link">ポートフォリオ</Link></li>
+                <li><Link to="/interests" className="footer__link">趣味・興味</Link></li>
+                <li><Link to="/contact" className="footer__link">お問い合わせ</Link></li>
               </ul>
             </div>
 
