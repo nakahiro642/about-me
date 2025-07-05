@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   const navigation = [
     { name: 'ホーム', href: '/', current: location.pathname === '/' },
     { name: '自己紹介', href: '/about', current: location.pathname === '/about' },
-    { name: 'ポートフォリオ', href: '/portfolio', current: location.pathname === '/portfolio' },
+    { name: 'ニュース', href: '/news', current: location.pathname === '/news' },
     { name: '趣味・興味', href: '/interests', current: location.pathname === '/interests' },
     { name: 'お問い合わせ', href: '/contact', current: location.pathname === '/contact' },
   ];

@@ -3,7 +3,7 @@ import Layout from './components/common/Layout';
 import ScrollToTop from './components/common/ScrollToTop';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-import Portfolio from './components/pages/news';
+import News from './components/pages/news';
 import Interests from './components/pages/Interests';
 import Contact from './components/pages/Contact';
 import './styles/global.css';
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/news" element={<News />} />
           <Route path="/interests" element={<Interests />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

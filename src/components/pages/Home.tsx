@@ -36,14 +36,6 @@ const Home: React.FC = () => {
     }
   }, [currentIndex, currentMessageIndex, messages]);
 
-  // スムーススクロール関数
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="home">
       {/* ヒーローセクション */}
@@ -61,12 +53,6 @@ const Home: React.FC = () => {
               <Link to="/about" className="btn btn-primary">
                 もっと詳しく
               </Link>
-              <button 
-                onClick={() => scrollToSection('featured')} 
-                className="btn btn-secondary"
-              >
-                作品を見る
-              </button>
             </div>
           </div>
           <div className="hero__image">
@@ -79,98 +65,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 特集セクション */}
-      <section id="featured" className="featured py-16">
-        <div className="container">
-          <h2 className="section-title text-center mb-12">Featured Works</h2>
-          <div className="grid grid-cols-3">
-            <div className="card feature-card">
-              <img 
-                src="https://via.placeholder.com/300x200/7c3aed/ffffff?text=Project+1" 
-                alt="プロジェクト1" 
-                className="feature-image"
-              />
-              <h3>Reactアプリケーション</h3>
-              <p className="text-muted">
-                モダンなUIライブラリを使用したWebアプリケーション
-              </p>
-              <Link to="/portfolio" className="btn btn-primary">
-                詳細を見る
-              </Link>
-            </div>
-            
-            <div className="card feature-card">
-              <img 
-                src="https://via.placeholder.com/300x200/f59e0b/ffffff?text=Project+2" 
-                alt="プロジェクト2" 
-                className="feature-image"
-              />
-              <h3>TypeScript API</h3>
-              <p className="text-muted">
-                型安全性を重視したバックエンドAPI開発
-              </p>
-              <Link to="/portfolio" className="btn btn-primary">
-                詳細を見る
-              </Link>
-            </div>
-            
-            <div className="card feature-card">
-              <img 
-                src="https://via.placeholder.com/300x200/10b981/ffffff?text=Project+3" 
-                alt="プロジェクト3" 
-                className="feature-image"
-              />
-              <h3>レスポンシブサイト</h3>
-              <p className="text-muted">
-                全デバイス対応のモダンWebサイト
-              </p>
-              <Link to="/portfolio" className="btn btn-primary">
-                詳細を見る
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* スキルセクション */}
-      <section className="skills py-16">
-        <div className="container">
-          <h2 className="section-title text-center mb-12">Skills & Technologies</h2>
-          <div className="skills-grid">
-            <div className="skill-category">
-              <h3>Frontend</h3>
-              <ul className="skill-list">
-                <li className="skill-item">React</li>
-                <li className="skill-item">TypeScript</li>
-                <li className="skill-item">CSS3</li>
-                <li className="skill-item">HTML5</li>
-              </ul>
-            </div>
-            
-            <div className="skill-category">
-              <h3>Tools</h3>
-              <ul className="skill-list">
-                <li className="skill-item">Git</li>
-                <li className="skill-item">Vite</li>
-                <li className="skill-item">ESLint</li>
-                <li className="skill-item">VS Code</li>
-              </ul>
-            </div>
-            
-            <div className="skill-category">
-              <h3>Design</h3>
-              <ul className="skill-list">
-                <li className="skill-item">UI/UX</li>
-                <li className="skill-item">Responsive</li>
-                <li className="skill-item">Accessibility</li>
-                <li className="skill-item">Animation</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA セクション */}
+      {/* お問い合わせセクション */}
       <section className="cta py-16">
         <div className="container">
           <div className="cta__content text-center">

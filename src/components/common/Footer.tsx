@@ -22,45 +22,9 @@ const Footer: React.FC = () => {
               <ul className="footer__list">
                 <li><Link to="/" className="footer__link">ホーム</Link></li>
                 <li><Link to="/about" className="footer__link">自己紹介</Link></li>
-                <li><Link to="/portfolio" className="footer__link">ポートフォリオ</Link></li>
+                <li><Link to="/news" className="footer__link">ニュース</Link></li>
                 <li><Link to="/interests" className="footer__link">趣味・興味</Link></li>
                 <li><Link to="/contact" className="footer__link">お問い合わせ</Link></li>
-              </ul>
-            </div>
-
-            <div className="footer__section">
-              <h4 className="footer__section-title">SNS</h4>
-              <ul className="footer__list">
-                <li>
-                  <a 
-                    href="https://github.com" 
-                    className="footer__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href="https://twitter.com" 
-                    className="footer__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Twitter
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href="https://linkedin.com" 
-                    className="footer__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
               </ul>
             </div>
           </div>

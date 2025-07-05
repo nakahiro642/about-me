@@ -4,35 +4,46 @@ import '../../styles/components/About.css';
 interface Skill {
   name: string;
   level: number;
+  icon: string;
+}
+
+interface Experience {
+  year: string;
+  title: string;
+  description: string;
+  image: string;
 }
 
 const About: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'profile' | 'skills' | 'experience'>('profile');
 
   const skills: Skill[] = [
-    { name: 'VALORANT', level: 80 },
-    { name: 'Minecraft', level: 60 },
-    { name: 'ゼルダの伝説', level: 50 },
-    { name: 'League of Legends', level: 90 },
-    { name: '崩壊:スターレイル', level: 80 },
-    { name: '原神', level: 70 },
+    { name: 'VALORANT', level: 80, icon: '/images/games/valorant.jpg' },
+    { name: 'Minecraft', level: 60, icon: '/images/games/minecraft.jpg' },
+    { name: 'ゼルダの伝説', level: 50, icon: '/images/games/zelda.jpg' },
+    { name: 'League of Legends', level: 90, icon: '/images/games/lol.jpg' },
+    { name: '崩壊:スターレイル', level: 80, icon: '/images/games/starrail.jpg' },
+    { name: '原神', level: 70, icon: '/images/games/genshin.jpg' },
   ];
 
-  const experiences = [
+  const experiences: Experience[] = [
     {
       year: '2025',
       title: '京都デザイン&テクノロジー専門学校入学',
-      description: '全授業真面目に受けています。(夢の中で)'
+      description: '全授業真面目に受けています。(夢の中で)',
+      image: '/images/school.jpg'
     },
     {
       year: '2025',
       title: '京都共栄学園卒業',
-      description: 'いい高校でしたね。'
+      description: 'いい高校でしたね。',
+      image: '/images/graduation.jpg'
     },
     {
       year: '2024',
       title: 'プログラミング学習開始',
-      description: 'C言語を少し学んでいました。'
+      description: 'C言語を少し学んでいました。',
+      image: '/images/programming.jpg'
     }
   ];
 
@@ -54,7 +65,7 @@ const About: React.FC = () => {
         <div className="about__header">
           <h1 className="page-title">自己紹介</h1>
           <p className="page-subtitle">
-            私についてもっと詳しく知っていただけます
+            私についてもっと詳しく
           </p>
         </div>
 
@@ -102,7 +113,7 @@ const About: React.FC = () => {
 
                   <h3>目標</h3>
                   <p>
-                    一つのWEBを作り上げることができるエンジニアになることを目指しています。
+                    優れたUI/UXを持つサイトを作成することです。
                   </p>
                 </div>
                 
