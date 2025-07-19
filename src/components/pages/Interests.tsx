@@ -33,7 +33,7 @@ const Interests: React.FC = () => {
       title: '僕のこと',
       artist: 'Mrs. GREEN APPLE',
       description: 'Mrs. GREEN APPLEの名曲。心に響く歌詞とメロディが特徴。',
-      image: '/images/僕のこと.jpg',
+      image: 'public/images/me.png',
       rating: 5
     },
     {
@@ -41,7 +41,7 @@ const Interests: React.FC = () => {
       title: 'Plazma',
       artist: '米津玄師',
       description: '米津玄師の人気曲。独特な世界観とメロディが魅力。',
-      image: '/images/fake_plazma.jpg',
+      image: 'public/images/fake_plazma.jpg',
       rating: 5
     },
     {
