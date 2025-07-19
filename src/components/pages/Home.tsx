@@ -7,6 +7,12 @@ const Home: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
   
+  // ベースパスを動的に取得
+  const getImagePath = (imageName: string) => {
+    const basePath = process.env.NODE_ENV === 'production' ? '/about-me' : '';
+    return `${basePath}/${imageName}`;
+  };
+  
   const messages = useMemo(() => [
     'AIからTypeScript等を学びながら作成',
     'ゲームと寝ることが趣味です',
@@ -57,7 +63,7 @@ const Home: React.FC = () => {
           </div>
           <div className="hero__image">
             <img 
-              src="my-face.jpg" 
+              src={getImagePath("my-face.jpg")} 
               alt="プロフィール画像" 
               className="profile-image"
             />
