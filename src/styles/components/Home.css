@@ -95,6 +95,73 @@
 .hero__image {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+/* 写真グリッドのスタイル */
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  width: 350px;
+  height: 350px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover .grid-image {
+  transform: scale(1.1);
+}
+
+/* アニメーション効果 */
+.photo-item:nth-child(1) {
+  animation: fadeInUp 0.6s ease 0.1s both;
+}
+
+.photo-item:nth-child(2) {
+  animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+.photo-item:nth-child(3) {
+  animation: fadeInUp 0.6s ease 0.3s both;
+}
+
+.photo-item:nth-child(4) {
+  animation: fadeInUp 0.6s ease 0.4s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .profile-image {
@@ -113,6 +180,21 @@
   .profile-image {
     width: 400px;
     height: 400px;
+  }
+
+  .photo-grid {
+    width: 400px;
+    height: 400px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-grid {
+    width: 280px;
+    height: 280px;
+    gap: 10px;
+    padding: 15px;
   }
 }
 

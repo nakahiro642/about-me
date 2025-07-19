@@ -62,11 +62,36 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className="hero__image">
-            <img 
-              src={getImagePath("my-face.jpg")} 
-              alt="プロフィール画像" 
-              className="profile-image"
-            />
+            <div className="photo-grid">
+              <div className="photo-item">
+                <img 
+                  src={getImagePath("images/me.png")} 
+                  alt="写真1" 
+                  className="grid-image"
+                />
+              </div>
+              <div className="photo-item">
+                <img 
+                  src={getImagePath("my-face.jpg")} 
+                  alt="写真2" 
+                  className="grid-image"
+                />
+              </div>
+              <div className="photo-item">
+                <img 
+                  src={getImagePath("images/job.jpg")} 
+                  alt="写真3" 
+                  className="grid-image"
+                />
+              </div>
+              <div className="photo-item">
+                <img 
+                  src={getImagePath("images/no_sleep.png")} 
+                  alt="写真4" 
+                  className="grid-image"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
