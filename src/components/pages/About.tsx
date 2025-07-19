@@ -16,6 +16,12 @@ interface Experience {
 const About: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'profile' | 'skills' | 'experience'>('profile');
 
+  // ベースパスを動的に取得
+  const getImagePath = (imageName: string) => {
+    const basePath = process.env.NODE_ENV === 'production' ? '/about-me' : '';
+    return `${basePath}/images/${imageName}`;
+  };
+
   const skills: Skill[] = [
     { name: 'VALORANT', level: 80 },
     { name: 'Minecraft', level: 60},
@@ -30,19 +36,19 @@ const About: React.FC = () => {
       year: '2025',
       title: '京都デザイン&テクノロジー専門学校入学',
       description: '全授業真面目に受けています。(夢の中で)',
-      image: '/images/school.jpg'
+      image: getImagePath('school.jpg')
     },
     {
       year: '2025',
       title: '京都共栄学園卒業',
       description: 'いい高校でしたね。',
-      image: '/images/graduation.jpg'
+      image: getImagePath('graduation.jpg')
     },
     {
       year: '2024',
       title: 'プログラミング学習開始',
       description: 'C言語を少し学んでいました。',
-      image: '/images/programming.jpg'
+      image: getImagePath('programming.jpg')
     }
   ];
 
