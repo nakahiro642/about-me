@@ -9,8 +9,10 @@ import Contact from './components/pages/Contact';
 import './styles/global.css';
 
 function App() {
+  const basename = process.env.NODE_ENV === 'production' ? '/about-me' : '';
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <ScrollToTop />
       <Layout>
         <Routes>
