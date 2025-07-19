@@ -4,7 +4,6 @@ import '../../styles/components/About.css';
 interface Skill {
   name: string;
   level: number;
-  icon: string;
 }
 
 interface Experience {
@@ -18,12 +17,12 @@ const About: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'profile' | 'skills' | 'experience'>('profile');
 
   const skills: Skill[] = [
-    { name: 'VALORANT', level: 80, icon: '/images/games/valorant.jpg' },
-    { name: 'Minecraft', level: 60, icon: '/images/games/minecraft.jpg' },
-    { name: 'ゼルダの伝説', level: 50, icon: '/images/games/zelda.jpg' },
-    { name: 'League of Legends', level: 90, icon: '/images/games/lol.jpg' },
-    { name: '崩壊:スターレイル', level: 80, icon: '/images/games/starrail.jpg' },
-    { name: '原神', level: 70, icon: '/images/games/genshin.jpg' },
+    { name: 'VALORANT', level: 80 },
+    { name: 'Minecraft', level: 60},
+    { name: 'ゼルダの伝説', level: 50},
+    { name: 'League of Legends', level: 90},
+    { name: '崩壊:スターレイル', level: 80},
+    { name: '原神', level: 70},
   ];
 
   const experiences: Experience[] = [
@@ -146,7 +145,7 @@ const About: React.FC = () => {
                   <div key={skill.name} className="skill-item">
                     <div className="skill-header">
                       <span className="skill-name">{skill.name}</span>
-                      <span className="skill-percentage">{skill.level}%</span>
+                      <span className="skill-percent">{skill.level}%</span>
                     </div>
                     <div className="skill-bar">
                       <div 

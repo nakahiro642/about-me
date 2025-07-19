@@ -1,4 +1,3 @@
-/* Interests Page Styles */
 .interests {
   padding: var(--space-12) 0;
   min-height: 100vh;
@@ -9,7 +8,7 @@
   margin-bottom: var(--space-12);
 }
 
-/* Tab Navigation */
+/* Tab操作 */
 .tab-navigation {
   display: flex;
   justify-content: center;
@@ -44,7 +43,6 @@
   background-color: rgba(37, 99, 235, 0.1);
 }
 
-/* Tab Content */
 .tab-content {
   min-height: 600px;
 }
@@ -66,7 +64,7 @@
   line-height: var(--line-height-relaxed);
 }
 
-/* Items Grid */
+/* Items */
 .items-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -87,7 +85,6 @@
   }
 }
 
-/* Item Card */
 .item-card {
   background-color: var(--color-surface);
   border-radius: var(--radius-lg);
@@ -142,7 +139,7 @@
   font-size: var(--font-size-sm);
 }
 
-/* Rating */
+/* レート */
 .rating {
   display: flex;
   gap: var(--space-1);
@@ -158,7 +155,7 @@
   color: var(--color-accent);
 }
 
-/* Card Styles (unified for items and hobbies) */
+/* Style */
 .items-grid,
 .hobbies-grid {
   display: grid;
@@ -324,7 +321,7 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive adjustments */
+/* 反応 */
 @media (max-width: 767px) {
   .tab-navigation {
     flex-direction: column;

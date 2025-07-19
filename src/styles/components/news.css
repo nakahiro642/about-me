@@ -1,4 +1,3 @@
-/* News Page Styles */
 .news {
   width: 100%;
   padding: var(--space-12) 0;
@@ -38,7 +37,7 @@
   margin: 0 auto;
 }
 
-/* Filter buttons */
+/* ボタン */
 .news__filters {
   display: flex;
   justify-content: center;
@@ -72,7 +71,7 @@
   border-color: var(--color-primary);
 }
 
-/* News grid */
+/* grid */
 .news__grid {
   display: grid;
   gap: var(--space-6);
@@ -192,7 +191,7 @@
   }
 }
 
-/* Project Card */
+/* Project */
 .project-card {
   background-color: var(--color-surface);
   border-radius: var(--radius-lg);
@@ -408,7 +407,7 @@
   margin-top: auto;
 }
 
-/* Responsive adjustments */
+/* 反応 */
 @media (max-width: 767px) {
   .modal-content {
     margin: var(--space-4);

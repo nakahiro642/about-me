@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <div className="footer__info">
             <h3 className="footer__title">MY PORTFOLIO</h3>
             <p className="footer__description">
-              React + TypeScriptで作成したポートフォリオサイトです。
+              React + TypeScript + AIで作成したポートフォリオサイトです。
             </p>
           </div>
 
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             &copy; {currentYear} My Portfolio. All rights reserved.
           </p>
           <p className="footer__tech">
-            Built with React & TypeScript
+            Built with React & TypeScript & AI
           </p>
         </div>
       </div>

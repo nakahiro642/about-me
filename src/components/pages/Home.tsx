@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
   
   const messages = useMemo(() => [
-    '出席率100%です',
+    'AIからTypeScript等を学びながら作成',
     'ゲームと寝ることが趣味です',
     'ジャンクフードが大好きです',
   ], []);
