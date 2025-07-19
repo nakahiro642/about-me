@@ -9,7 +9,7 @@ import Contact from './components/pages/Contact';
 import './styles/global.css';
 
 function App() {
-  const basename = process.env.NODE_ENV === 'production' ? '/about-me' : '';
+  const basename = process.env.NODE_ENV === 'production' ? '/about-me/' : '';
   
   return (
     <Router basename={basename}>
@@ -17,10 +17,10 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/interests" element={<Interests />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/about/" element={<About />} />
+          <Route path="/news/" element={<News />} />
+          <Route path="/interests/" element={<Interests />} />
+          <Route path="/contact/" element={<Contact />} />
         </Routes>
       </Layout>
     </Router>
