@@ -16,11 +16,12 @@ interface Experience {
 const About: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'profile' | 'skills' | 'experience'>('profile');
 
-  // ベースパスを動的に取得
+ // getImagePath関数を追加
   const getImagePath = (imageName: string) => {
     const basePath = process.env.NODE_ENV === 'production' ? '/about-me' : '';
-    return `${basePath}/images/${imageName}`;
+    return `${basePath}/${imageName}`;
   };
+  
 
   const skills: Skill[] = [
     { name: 'VALORANT', level: 80 },
@@ -72,6 +73,14 @@ const About: React.FC = () => {
           <p className="page-subtitle">
             私についてもっと詳しく
           </p>
+      {/* 右下固定の画像 */}
+      <div className="contact__image">
+        <img 
+          src={getImagePath("my-face.jpg")} 
+          alt="プロフィール画像" 
+          className="contact__image-img"
+        />
+        </div>
         </div>
 
         {/* タブナビゲーション */}

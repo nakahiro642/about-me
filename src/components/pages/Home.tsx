@@ -65,7 +65,7 @@ const Home: React.FC = () => {
             <div className="photo-grid">
               <div className="photo-item">
                 <img 
-                  src={getImagePath("images/me.png")} 
+                  src={getImagePath("images/ai.jpg")} 
                   alt="写真1" 
                   className="grid-image"
                 />
@@ -79,14 +79,14 @@ const Home: React.FC = () => {
               </div>
               <div className="photo-item">
                 <img 
-                  src={getImagePath("images/job.jpg")} 
+                  src={getImagePath("images/kyoto-tech.png")} 
                   alt="写真3" 
                   className="grid-image"
                 />
               </div>
               <div className="photo-item">
                 <img 
-                  src={getImagePath("images/no_sleep.png")} 
+                  src={getImagePath("images/yaruki.png")} 
                   alt="写真4" 
                   className="grid-image"
                 />

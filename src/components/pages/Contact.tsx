@@ -62,21 +62,32 @@ const Contact: React.FC = () => {
       </div>
     );
   }
-
-  // メインのお問い合わせページ
-  return (
-    <div className="contact">
-      <div className="container">
-        <div className="contact__header">
-          <h1 className="contact__title">お問い合わせ</h1>
-          <p className="contact__subtitle">
-            ご質問やご相談がありましたら、お気軽にお声がけください。<br />
-          </p>
-        </div>
-
-        <div className="contact__form-container">
-          <form className="contact__form" onSubmit={handleSubmit}>
-            <div className="form-group">
+// getImagePath関数を追加
+  const getImagePath = (imageName: string) => {
+    const basePath = process.env.NODE_ENV === 'production' ? '/about-me' : '';
+    return `${basePath}/${imageName}`;
+  };
+// メインのお問い合わせページ
+return (
+  <div className="contact">
+    <div className="container">
+      <div className="contact__header">
+        <h1 className="contact__title">お問い合わせ</h1>
+        <p className="contact__subtitle">
+          ご質問やご相談がありましたら、お気軽にお声がけください。<br />
+        </p>
+      </div>
+      {/* 右下固定の画像 */}
+      <div className="contact__image">
+        <img 
+          src={getImagePath("my-face.jpg")} 
+          alt="プロフィール画像" 
+          className="contact__image-img"
+        />
+      </div>
+      <div className="contact__form-container">
+        <form className="contact__form" onSubmit={handleSubmit}>
+          <div className="form-group">
               <label className="form-label">お名前</label>
               <input
                 className="form-input"
