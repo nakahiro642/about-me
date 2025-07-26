@@ -106,7 +106,7 @@ return (
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="example@example.com"
+                placeholder="TaroTanaka@example.com"
                 disabled={isLoading}
               />
             </div>

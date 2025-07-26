@@ -127,7 +127,7 @@ const About: React.FC = () => {
 
                   <h3>目標</h3>
                   <p>
-                    優れたUI/UXを持つサイトを作成することです。
+                    学生である内に多くの資格を取得し、将来はIT業界で活躍したいと考えています。
                   </p>
                 </div>
                 
@@ -176,7 +176,7 @@ const About: React.FC = () => {
               </div>
             </div>
           )}
-
+          
           {activeTab === 'experience' && (
             <div className="experience-content fade-in">
               <h2>経歴</h2>

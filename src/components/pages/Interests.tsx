@@ -9,6 +9,7 @@ interface Music {
   description: string;
   image: string;
   rating: number;
+  link: string;
 }
 
 // 趣味の情報を定義する型
@@ -23,8 +24,6 @@ interface Hobby {
 const Interests: React.FC = () => {
   // どのタブが選択されているかを管理
   const [activeTab, setActiveTab] = useState<'music' | 'hobbies'>('music');
-  // 拡大表示する画像を管理
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
  // getImagePath関数を追加
   const getImagePath = (imageName: string) => {
@@ -41,7 +40,8 @@ const Interests: React.FC = () => {
       artist: 'Mrs. GREEN APPLE',
       description: 'Mrs. GREEN APPLEの名曲。心に響く歌詞とメロディが特徴。',
       image: getImagePath('images/me.png'),
-      rating: 5
+      rating: 5,
+      link: 'https://youtu.be/xefpHEg5UIA?si=FYhRPl-867jPvVJP'
     },
     {
       id: 2,
@@ -49,7 +49,8 @@ const Interests: React.FC = () => {
       artist: '米津玄師',
       description: '米津玄師の人気曲。独特な世界観とメロディが魅力。',
       image: getImagePath('images/fake_plazma.jpg'),
-      rating: 5
+      rating: 5,
+      link: 'https://youtu.be/fp3F6TqBsAU?si=J_xlGE4nXEVzOryK'
     },
     {
       id: 3,
@@ -57,7 +58,8 @@ const Interests: React.FC = () => {
       artist: 'Mrs. GREEN APPLE',
       description: 'Mrs. GREEN APPLEの名曲。心に残る歌詞と美しいメロディ。',
       image: getImagePath('images/fake_soranji.jpg'),
-      rating: 5
+      rating: 5,
+      link: 'https://youtu.be/44cICMd3jW4?si=N1CArp7x5-ej_0Eq'
     }
   ];
 
@@ -102,20 +104,6 @@ const Interests: React.FC = () => {
     );
   };
 
-  // 画像を拡大表示する関数
-  const openLightbox = (image: string) => {
-    setSelectedImage(image);
-    // 背景のスクロールを無効にする
-    document.body.style.overflow = 'hidden';
-  };
-
-  // 拡大表示を閉じる関数
-  const closeLightbox = () => {
-    setSelectedImage(null);
-    // 背景のスクロールを元に戻す
-    document.body.style.overflow = 'unset';
-  };
-
   return (
     <div className="interests">
       <div className="container">
@@ -153,7 +141,7 @@ const Interests: React.FC = () => {
               <div className="items-grid">
                 {music.map((track) => (
                   <div key={track.id} className="item-card">
-                    <div className="item-image" onClick={() => openLightbox(track.image)}>
+                    <div className="item-image">
                       <img src={track.image} alt={track.title} />
                     </div>
                     <div className="item-content">
@@ -161,6 +149,14 @@ const Interests: React.FC = () => {
                       <p className="item-subtitle">{track.artist}</p>
                       <p className="item-description">{track.description}</p>
                       {renderStars(track.rating)}
+                      <a 
+                        href={track.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="youtube-link"
+                      >
+                        🎵 YouTubeで聴く
+                      </a>
                     </div>
                   </div>
                 ))}
@@ -178,7 +174,7 @@ const Interests: React.FC = () => {
               <div className="hobbies-grid">
                 {hobbies.map((hobby) => (
                   <div key={hobby.id} className="hobby-card">
-                    <div className="hobby-image" onClick={() => openLightbox(hobby.image)}>
+                    <div className="hobby-image">
                       <img src={hobby.image} alt={hobby.title} />
                     </div>
                     <div className="hobby-content">
@@ -197,18 +193,6 @@ const Interests: React.FC = () => {
           )}
         </div>
       </div>
-
-      {/* 画像の拡大表示（ライトボックス） */}
-      {selectedImage && (
-        <div className="lightbox-overlay" onClick={closeLightbox}>
-          <div className="lightbox-content">
-            <button className="lightbox-close" onClick={closeLightbox}>
-              ×
-            </button>
-            <img src={selectedImage} alt="拡大表示" />
-          </div>
-        </div>
-      )}
     </div>
   );
 };

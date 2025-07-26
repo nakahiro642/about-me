@@ -321,6 +321,56 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* 音楽リンクのスタイル */
+.music-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: var(--radius-lg);
+}
+
+.music-link:hover .play-overlay {
+  opacity: 1;
+}
+
+.play-icon {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.youtube-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff0000;
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.youtube-link:hover {
+  background-color: #cc0000;
+  color: white;
+}
+
 /* 反応 */
 @media (max-width: 767px) {
   .tab-navigation {
