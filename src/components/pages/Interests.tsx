@@ -40,7 +40,7 @@ const Interests: React.FC = () => {
       title: '僕のこと',
       artist: 'Mrs. GREEN APPLE',
       description: 'Mrs. GREEN APPLEの名曲。心に響く歌詞とメロディが特徴。',
-      image: getImagePath('me.png'),
+      image: getImagePath('images/me.png'),
       rating: 5
     },
     {
@@ -48,7 +48,7 @@ const Interests: React.FC = () => {
       title: 'Plazma',
       artist: '米津玄師',
       description: '米津玄師の人気曲。独特な世界観とメロディが魅力。',
-      image: getImagePath('fake_plazma.jpg'),
+      image: getImagePath('images/fake_plazma.jpg'),
       rating: 5
     },
     {
@@ -56,7 +56,7 @@ const Interests: React.FC = () => {
       title: 'Soranji',
       artist: 'Mrs. GREEN APPLE',
       description: 'Mrs. GREEN APPLEの名曲。心に残る歌詞と美しいメロディ。',
-      image: getImagePath('fake_soranji.jpg'),
+      image: getImagePath('images/fake_soranji.jpg'),
       rating: 5
     }
   ];
@@ -67,21 +67,21 @@ const Interests: React.FC = () => {
       id: 1,
       title: 'ゲーム',
       description: '強気に行くのが僕のプレイスタイルです。',
-      image: getImagePath('controller.png'),
+      image: getImagePath('images/controller.png'),
       tags: ['FPS','TPS', 'RPG']
     },
     {
       id: 2,
       title: '寝ること',
       description: '寝ることは最高のリフレッシュ方法です。',
-      image: getImagePath('no_sleep.png'),
+      image: getImagePath('images/no_sleep.png'),
       tags: ['リラックス', '健康']
     },
     {
       id: 3,
       title: 'バイト',
       description: 'お金を稼ぐために頑張っています。',
-      image: getImagePath('job.jpg'),
+      image: getImagePath('images/job.jpg'),
       tags: ['仕事', '経験']
     }
   ];
