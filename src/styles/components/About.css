@@ -58,13 +58,6 @@
   }
 }
 
-/* 非常に小さい画面では非表示 */
-@media (max-width: 480px) {
-  .contact__image {
-    display: none;
-  }
-}
-
 /* タブ操作 */
 .tab-navigation {
   display: flex;

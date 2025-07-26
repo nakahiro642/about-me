@@ -26,12 +26,13 @@ const Interests: React.FC = () => {
   // 拡大表示する画像を管理
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // ベースパスを動的に取得
+ // getImagePath関数を追加
   const getImagePath = (imageName: string) => {
     const basePath = process.env.NODE_ENV === 'production' ? '/about-me' : '';
-    return `${basePath}/images/${imageName}`;
+    return `${basePath}/${imageName}`;
   };
 
+  
   // 音楽のデータ
   const music: Music[] = [
     {

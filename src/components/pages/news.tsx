@@ -10,8 +10,16 @@ interface NewsItem {
   image?: string;
 }
 
+
+  
 const News: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<'all' | 'announcement' | 'update' | 'achievement'>('all');
+
+   // getImagePath関数を追加
+  const getImagePath = (imageName: string) => {
+    const basePath = process.env.NODE_ENV === 'production' ? '/about-me' : '';
+    return `${basePath}/${imageName}`;
+  };
 
   const newsItems: NewsItem[] = [
     //追加予定
@@ -50,7 +58,17 @@ const News: React.FC = () => {
     : newsItems.filter(item => item.category === selectedCategory);
 
   return (
-    <div className="news">
+    <>
+      {/* 右下固定の画像 */}
+      <div className="contact__image">
+        <img 
+          src={getImagePath("my-face.jpg")} 
+          alt="プロフィール画像" 
+          className="contact__image-img"
+        />
+      </div>
+
+      <div className="news">
       <div className="container">
         <div className="news__header">
           <h1 className="page-title">ニュース</h1>
@@ -93,6 +111,7 @@ const News: React.FC = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
