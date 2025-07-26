@@ -1,8 +1,6 @@
-# Read meの例(Readme.mdの内容も加点要素とします)
-
 # About Me 
 
-サイトURL: https://wangchangdog.github.io/about-me/
+サイトURL: https://nakahiro642.github.io/about-me/
 
 (例)
 このサイトは私の自己紹介のために制作しました。
