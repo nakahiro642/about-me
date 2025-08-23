@@ -47,7 +47,7 @@ const News: React.FC = () => {
     {
       id: 4,
       title: '海外研修に参加します',
-      content: 'かなり楽しみです。',
+      content: 'かなり楽しみです。でも少し不安もあります。',
       date: '2025-08-23',
       category: 'announcement'
     }

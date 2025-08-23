@@ -267,3 +267,41 @@
     font-size: var(--font-size-3xl);
   }
 }
+
+/* 光エフェクトのアニメーション */
+@keyframes blue-glow {
+  0% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+    border-color: rgba(59, 130, 246, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.4);
+    border-color: rgba(59, 130, 246, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+    border-color: rgba(59, 130, 246, 0.5);
+  }
+}
+
+/* 入力フィールドの光エフェクト */
+.form-input--glowing,
+.form-textarea--glowing {
+  animation: blue-glow 0.3s ease-out;
+  transition: all 0.3s ease;
+}
+
+/* 入力された文字は黒で表示 */
+.form-input,
+.form-textarea {
+  color: #000;
+  transition: color 0.1s ease;
+}
+
+/* フォーカス時の基本スタイル */
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}

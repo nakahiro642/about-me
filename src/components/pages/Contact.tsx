@@ -9,6 +9,20 @@ const Contact: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+  // 光エフェクト用のstate
+  const [glowingField, setGlowingField] = useState<string | null>(null);
+
+  // 入力時の光エフェクト
+  const handleInputChange = (field: string, value: string, setter: (value: string) => void) => {
+    setter(value);
+    setGlowingField(field);
+    
+    // 光エフェクトを一定時間後に消す
+    setTimeout(() => {
+      setGlowingField(prev => prev === field ? null : prev);
+    }, 300);
+  };
+
   // フォーム送信時の処理
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -97,10 +111,10 @@ return (
           <div className="form-group">
               <label className="form-label">お名前</label>
               <input
-                className="form-input"
+                className={`form-input ${glowingField === 'name' ? 'form-input--glowing' : ''}`}
                 type="text"
                 value={name}
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => handleInputChange('name', e.target.value, setName)}
                 placeholder="田中太郎"
                 disabled={isLoading}
               />
@@ -109,10 +123,10 @@ return (
             <div className="form-group">
               <label className="form-label">メールアドレス</label>
               <input
-                className="form-input"
+                className={`form-input ${glowingField === 'email' ? 'form-input--glowing' : ''}`}
                 type="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => handleInputChange('email', e.target.value, setEmail)}
                 placeholder="TaroTanaka@example.com"
                 disabled={isLoading}
               />
@@ -121,9 +135,9 @@ return (
             <div className="form-group">
               <label className="form-label">メッセージ</label>
               <textarea
-                className="form-textarea"
+                className={`form-textarea ${glowingField === 'message' ? 'form-textarea--glowing' : ''}`}
                 value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={(e) => handleInputChange('message', e.target.value, setMessage)}
                 placeholder="お問い合わせ内容をご記入ください"
                 rows={5}
                 disabled={isLoading}

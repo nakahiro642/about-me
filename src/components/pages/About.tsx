@@ -34,13 +34,13 @@ const About: React.FC = () => {
   const experiences: Experience[] = [
     {
       year: '2025',
-      title: '京都デザイン&テクノロジー専門学校入学',
-      description: '全授業真面目に受けています。(夢の中で)'
+      title: '堀大輔を崇拝し始める',
+      description: '彼の動画を見て人生が変わりました'
     },
     {
       year: '2025',
-      title: '京都共栄学園卒業',
-      description: 'いい高校でしたね。'
+      title: '京都デザイン&テクノロジー専門学校入学',
+      description: '櫟村先生の覇王色の覇気に圧倒され、毎回気絶してしまいます'
     },
     {
       year: '2024',
@@ -103,7 +103,7 @@ const About: React.FC = () => {
             className={`tab-button ${activeTab === 'experience' ? 'tab-button--active' : ''}`}
             onClick={() => setActiveTab('experience')}
           >
-            経験
+            経歴
           </button>
         </div>
 
@@ -121,7 +121,7 @@ const About: React.FC = () => {
                   <h3>興味・関心</h3>
                   <ul className="interest-list">
                     <li>ゲーム</li>
-                    <li>高速タイピング</li>
+                    <li>堀大輔</li>
                     <li>音楽</li>
                     <li>映画</li>
                     <li>バイト</li>
@@ -181,7 +181,7 @@ const About: React.FC = () => {
           
           {activeTab === 'experience' && (
             <div className="experience-content fade-in">
-              <h2>経歴</h2>
+              <h2>私の人生</h2>
               <p className="experience-description">
                 おおまかな記録です。
               </p>
