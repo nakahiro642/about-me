@@ -61,8 +61,21 @@ const News: React.FC = () => {
   ];
 
   const filteredNews = selectedCategory === 'all' 
-    ? newsItems 
-    : newsItems.filter(item => item.category === selectedCategory);
+    ? newsItems.sort((a, b) => {
+        // サイトオープンのお知らせ（id: 1）を最上位に固定
+        if (a.id === 1) return -1;
+        if (b.id === 1) return 1;
+        // その他は日付順（新しい順）
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
+      })
+    : newsItems.filter(item => item.category === selectedCategory)
+    .sort((a, b) => {
+        // サイトオープンのお知らせ（id: 1）を最上位に固定
+        if (a.id === 1) return -1;
+        if (b.id === 1) return 1;
+        // その他は日付順（新しい順）
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
+      });
 
   return (
     <>
