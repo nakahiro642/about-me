@@ -32,7 +32,7 @@ const News: React.FC = () => {
     },
     {
       id: 2,
-      title: '資格取得のお知らせ',
+      title: '資格取得',
       content: 'AI900の資格を取得しました。次は基本情報技術者試験を目指します。',
       date: '2025-04-30',
       category: 'achievement'
@@ -43,6 +43,13 @@ const News: React.FC = () => {
       content: 'サイトのデザインとコンテンツを更新しました。',
       date: '2025-07-26',
       category: 'update'
+    },
+    {
+      id: 4,
+      title: '海外研修に参加します',
+      content: 'かなり楽しみです。',
+      date: '2025-08-23',
+      category: 'announcement'
     }
   ];
 
@@ -61,11 +68,17 @@ const News: React.FC = () => {
     <>
       {/* 右下固定の画像 */}
       <div className="contact__image">
-        <img 
-          src={getImagePath("my-face.jpg")} 
-          alt="プロフィール画像" 
-          className="contact__image-img"
-        />
+        <a
+          href="https://www.tiktok.com/@zizikqindv0/video/7515345795151908104"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={getImagePath("my-face.jpg")}
+            alt="プロフィール画像"
+            className="contact__image-img"
+          />
+        </a>
       </div>
 
       <div className="news">

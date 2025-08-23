@@ -10,7 +10,6 @@ interface Experience {
   year: string;
   title: string;
   description: string;
-  image: string;
 }
 
 const About: React.FC = () => {
@@ -36,20 +35,17 @@ const About: React.FC = () => {
     {
       year: '2025',
       title: '京都デザイン&テクノロジー専門学校入学',
-      description: '全授業真面目に受けています。(夢の中で)',
-      image: getImagePath('school.jpg')
+      description: '全授業真面目に受けています。(夢の中で)'
     },
     {
       year: '2025',
       title: '京都共栄学園卒業',
-      description: 'いい高校でしたね。',
-      image: getImagePath('graduation.jpg')
+      description: 'いい高校でしたね。'
     },
     {
       year: '2024',
       title: 'プログラミング学習開始',
-      description: 'C言語を少し学んでいました。',
-      image: getImagePath('programming.jpg')
+      description: 'C言語を少し学んでいました。'
     }
   ];
 
@@ -75,11 +71,17 @@ const About: React.FC = () => {
           </p>
       {/* 右下固定の画像 */}
       <div className="contact__image">
+        <a href = "https://www.tiktok.com/@zizikqindv0/video/7515345795151908104"
+          target = "_blank"
+          rel = "noopener noreferrer"
+        >
         <img 
           src={getImagePath("my-face.jpg")} 
           alt="プロフィール画像" 
           className="contact__image-img"
+          style = {{ cursor: "pointer" }}
         />
+        </a>
         </div>
         </div>
 

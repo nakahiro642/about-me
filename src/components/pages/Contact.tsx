@@ -79,11 +79,18 @@ return (
       </div>
       {/* 右下固定の画像 */}
       <div className="contact__image">
-        <img 
-          src={getImagePath("my-face.jpg")} 
-          alt="プロフィール画像" 
-          className="contact__image-img"
-        />
+        <a
+          href = "https://www.tiktok.com/@zizikqindv0/video/7515345795151908104"
+          target = "_blank"
+          rel = "noopener noreferrer"
+        >
+          <img
+            src={getImagePath("my-face.jpg")}
+            alt="プロフィール画像"
+            className="contact__image-img"
+            style={{ cursor: "pointer" }}
+          />
+        </a>
       </div>
       <div className="contact__form-container">
         <form className="contact__form" onSubmit={handleSubmit}>
