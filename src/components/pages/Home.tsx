@@ -65,7 +65,7 @@ const Home: React.FC = () => {
             <div className="photo-grid">
               <div className="photo-item">
                 <img 
-                  src={getImagePath("images/horidaisuke.jpg")} 
+                  src={getImagePath("images/old_man.png")} 
                   alt="写真1" 
                   className="grid-image"
                 />

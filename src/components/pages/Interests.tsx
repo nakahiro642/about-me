@@ -40,7 +40,7 @@ const Interests: React.FC = () => {
       title: '僕のこと',
       artist: 'Mrs. GREEN APPLE',
       description: 'Mrs. GREEN APPLEの名曲。心に響く歌詞とメロディが特徴。',
-      image: getImagePath('images/me.png'),
+      image: getImagePath('images/me.jpg'),
       rating: 5,
       link: 'https://youtu.be/xefpHEg5UIA?si=FYhRPl-867jPvVJP'
     },
@@ -49,7 +49,7 @@ const Interests: React.FC = () => {
       title: 'Plazma',
       artist: '米津玄師',
       description: '米津玄師の人気曲。独特な世界観とメロディが魅力。',
-      image: getImagePath('images/fake_plazma.jpg'),
+      image: getImagePath('images/plazma.jpg'),
       rating: 5,
       link: 'https://youtu.be/fp3F6TqBsAU?si=J_xlGE4nXEVzOryK'
     },
@@ -58,7 +58,7 @@ const Interests: React.FC = () => {
       title: 'Soranji',
       artist: 'Mrs. GREEN APPLE',
       description: 'Mrs. GREEN APPLEの名曲。心に残る歌詞と美しいメロディ。',
-      image: getImagePath('images/fake_soranji.jpg'),
+      image: getImagePath('images/soranji.jpg'),
       rating: 5,
       link: 'https://youtu.be/44cICMd3jW4?si=N1CArp7x5-ej_0Eq'
     }
@@ -79,7 +79,7 @@ const Interests: React.FC = () => {
       title: '寝ること',
       description: '堀大輔さんの動画を見てから寝るとよく眠れます。',
       image: getImagePath('images/no_sleep.png'),
-      tags: ['リラックス', '健康'],
+      tags: ['リラックス', '健康','メソッド'],
       link: 'https://youtu.be/tE4eHJz3ngc?si=Z5HmjpGnr7zZ-9ui'
     },
     {
@@ -87,7 +87,7 @@ const Interests: React.FC = () => {
       title: 'バイト',
       description: '加藤さんのような店員を目指しています。',
       image: getImagePath('images/job.jpg'),
-      tags: ['仕事', '経験'],
+      tags: ['仕事', '経験','接客'],
       link: 'https://youtu.be/0eVm2a3pEKY?si=n0aEMjXGU58zkUx5'
     }
   ];
@@ -164,6 +164,25 @@ const Interests: React.FC = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+
+              {/* Spotifyプレイリストセクション */}
+              <div className="spotify-section">
+                <h3>🎧 お気に入りの邦楽リスト</h3>
+                <div className="spotify-playlists">
+                  <div className="spotify-embed">
+                    <iframe 
+                      src="https://open.spotify.com/embed/playlist/4j4DSGQHYOkLNt7ZvTEvZa?utm_source=generator" 
+                      width="100%" 
+                      height="352" 
+                      frameBorder="0" 
+                      allowFullScreen 
+                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                      loading="lazy"
+                      title="Spotify Playlist">
+                    </iframe>
+                  </div>
+                </div>
               </div>
             </div>
           )}

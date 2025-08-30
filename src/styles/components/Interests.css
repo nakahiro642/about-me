@@ -419,3 +419,41 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
+
+/* Spotifyセクション */
+.spotify-section {
+  margin-top: var(--space-8);
+}
+
+.spotify-section h3 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-6);
+  text-align: center;
+  color: var(--color-text-primary);
+}
+
+.spotify-playlists {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.spotify-embed {
+  width: 100%;
+}
+
+.spotify-embed iframe {
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 768px) {
+  .spotify-section {
+    margin-top: var(--space-6);
+  }
+  
+  .spotify-embed iframe {
+    height: 300px;
+  }
+}
