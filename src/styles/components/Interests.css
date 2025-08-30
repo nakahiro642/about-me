@@ -163,6 +163,7 @@
   gap: var(--space-8);
   max-width: 1000px;
   margin: 0 auto;
+  align-items: stretch; /* 追加: カードの高さを揃える */
 }
 
 @media (min-width: 768px) {
@@ -368,6 +369,25 @@
 
 .youtube-link:hover {
   background-color: #cc0000;
+  color: white;
+}
+
+.hobby-link {
+  display: block;
+  margin: 10px auto 0;
+  padding: 8px 16px;
+  background-color: #ffcc00;
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.hobby-link:hover {
+  background-color: #CC9900;
   color: white;
 }
 

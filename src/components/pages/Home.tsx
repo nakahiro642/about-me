@@ -65,28 +65,28 @@ const Home: React.FC = () => {
             <div className="photo-grid">
               <div className="photo-item">
                 <img 
-                  src={getImagePath("images/ai.jpg")} 
+                  src={getImagePath("images/horidaisuke.jpg")} 
                   alt="写真1" 
                   className="grid-image"
                 />
               </div>
               <div className="photo-item">
                 <img 
-                  src={getImagePath("my-face.jpg")} 
+                  src={getImagePath("images/interesting_face.png")} 
                   alt="写真2" 
                   className="grid-image"
                 />
               </div>
               <div className="photo-item">
                 <img 
-                  src={getImagePath("images/kyoto-tech.png")} 
+                  src={getImagePath("images/intersting_man.jpg")} 
                   alt="写真3" 
                   className="grid-image"
                 />
               </div>
               <div className="photo-item">
                 <img 
-                  src={getImagePath("images/yaruki.png")} 
+                  src={getImagePath("images/muringo.jpg")} 
                   alt="写真4" 
                   className="grid-image"
                 />

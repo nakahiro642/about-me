@@ -19,6 +19,7 @@ interface Hobby {
   description: string;
   image: string;
   tags: string[];
+  link: string;
 }
 
 const Interests: React.FC = () => {
@@ -68,23 +69,26 @@ const Interests: React.FC = () => {
     {
       id: 1,
       title: 'ゲーム',
-      description: '強気に行くのが僕のプレイスタイルです。',
+      description: 'ゲームは主にMOVAを好んでプレイしています。',
       image: getImagePath('images/controller.png'),
-      tags: ['FPS','TPS', 'RPG']
+      tags: ['FPS','TPS', 'MOVA'],
+      link: 'https://youtu.be/665ESDulm1Y?si=mOC_pzmMtL5ioLXw'
     },
     {
       id: 2,
       title: '寝ること',
-      description: '寝ることは最高のリフレッシュ方法です。',
+      description: '堀大輔さんの動画を見てから寝るとよく眠れます。',
       image: getImagePath('images/no_sleep.png'),
-      tags: ['リラックス', '健康']
+      tags: ['リラックス', '健康'],
+      link: 'https://youtu.be/tE4eHJz3ngc?si=Z5HmjpGnr7zZ-9ui'
     },
     {
       id: 3,
       title: 'バイト',
-      description: 'お金を稼ぐために頑張っています。',
+      description: '加藤さんのような店員を目指しています。',
       image: getImagePath('images/job.jpg'),
-      tags: ['仕事', '経験']
+      tags: ['仕事', '経験'],
+      link: 'https://youtu.be/0eVm2a3pEKY?si=n0aEMjXGU58zkUx5'
     }
   ];
 
@@ -185,6 +189,14 @@ const Interests: React.FC = () => {
                           <span key={tag} className="hobby-tag">{tag}</span>
                         ))}
                       </div>
+                      <a 
+                        href={hobby.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hobby-link"
+                      >
+                        🔗 詳細を見る
+                      </a>
                     </div>
                   </div>
                 ))}

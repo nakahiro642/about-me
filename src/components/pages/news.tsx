@@ -33,7 +33,7 @@ const News: React.FC = () => {
     {
       id: 2,
       title: '資格取得',
-      content: 'AI900の資格を取得しました。次は基本情報技術者試験を目指します。',
+      content: 'AI900の資格を取得しました。今は基本情報技術者試験を目指しています。',
       date: '2025-04-30',
       category: 'achievement'
     },
@@ -47,7 +47,7 @@ const News: React.FC = () => {
     {
       id: 4,
       title: '海外研修に参加します',
-      content: 'かなり楽しみです。でも少し不安もあります。',
+      content: 'かなり楽しみです。',
       date: '2025-08-23',
       category: 'announcement'
     }

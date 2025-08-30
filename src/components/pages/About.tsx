@@ -40,7 +40,7 @@ const About: React.FC = () => {
     {
       year: '2025',
       title: '京都デザイン&テクノロジー専門学校入学',
-      description: '櫟村先生の覇王色の覇気に圧倒され、毎回気絶してしまいます'
+      description: '櫟村先生の覇王色の覇気に圧倒され、毎回気絶しています'
     },
     {
       year: '2024',
@@ -137,7 +137,7 @@ const About: React.FC = () => {
                   <h4>基本情報</h4>
                   <dl className="info-list">
                     <dt>名前</dt>
-                    <dd>中島央貴</dd>
+                    <dd>中島央貴(ナカシマヒロキ)</dd>
                     <dt>所在地</dt>
                     <dd>京都府</dd>
                     <dt>専攻</dt>
