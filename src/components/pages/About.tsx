@@ -26,8 +26,8 @@ const About: React.FC = () => {
     { name: 'VALORANT', level: 80 },
     { name: 'Minecraft', level: 60},
     { name: 'ゼルダの伝説', level: 50},
-    { name: 'League of Legends', level: 90},
-    { name: '崩壊:スターレイル', level: 80},
+    { name: 'League of Legends', level: 100},
+    { name: '崩壊:スターレイル', level: 90},
     { name: '原神', level: 70},
   ];
 
@@ -43,9 +43,14 @@ const About: React.FC = () => {
       description: '櫟村先生の覇王色の覇気に圧倒され、毎回気絶しています'
     },
     {
+      year: '2025',
+      title: '課金の限界突破',
+      description: 'はじめてソシャゲで10万円以上課金しました。'
+    },
+    {
       year: '2024',
-      title: 'プログラミング学習開始',
-      description: 'C言語を少し学んでいました。'
+      title: 'League of Legendsを始める',
+      description: 'いつのまにかどハマりしました。怖いです'
     }
   ];
 
@@ -143,7 +148,11 @@ const About: React.FC = () => {
                     <dt>専攻</dt>
                     <dd>ITプログラマー専攻</dd>
                     <dt>趣味</dt>
-                    <dd>ゲーム、思いっきり寝ること</dd>
+                    <dd>ゲーム、面白い動画を見ること</dd>
+                    <dt>好きな食べ物</dt>
+                    <dd>ラーメン、寿司</dd>
+                    <dt>得意なこと</dt>
+                    <dd>面白い人を見つけること</dd>
                   </dl>
                 </div>
               </div>
@@ -183,7 +192,7 @@ const About: React.FC = () => {
             <div className="experience-content fade-in">
               <h2>私の人生</h2>
               <p className="experience-description">
-                おおまかな記録です。
+                最近の出来事。
               </p>
               
               <div className="timeline">

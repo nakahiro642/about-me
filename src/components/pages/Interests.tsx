@@ -22,6 +22,7 @@ interface Hobby {
   link: string;
 }
 
+
 const Interests: React.FC = () => {
   // どのタブが選択されているかを管理
   const [activeTab, setActiveTab] = useState<'music' | 'hobbies'>('music');
@@ -186,7 +187,7 @@ const Interests: React.FC = () => {
               </div>
             </div>
           )}
-
+          
           {/* 趣味タブが選択されている場合 */}
           {activeTab === 'hobbies' && (
             <div className="hobbies-content fade-in">

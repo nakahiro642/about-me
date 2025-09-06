@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   };
   
   const messages = useMemo(() => [
-    'AIからTypeScript等を学びながら作成',
+    '基本情報技術者の勉強をしています',
     'ゲームと寝ることが趣味です',
     'ジャンクフードが大好きです',
   ], []);
