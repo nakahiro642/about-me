@@ -41,7 +41,7 @@ const Interests: React.FC = () => {
       title: '僕のこと',
       artist: 'Mrs. GREEN APPLE',
       description: 'Mrs. GREEN APPLEの名曲。心に響く歌詞とメロディが特徴。',
-      image: getImagePath('images/me.jpg'),
+      image: getImagePath('images/me.png'),
       rating: 5,
       link: 'https://youtu.be/xefpHEg5UIA?si=FYhRPl-867jPvVJP'
     },
@@ -50,7 +50,7 @@ const Interests: React.FC = () => {
       title: 'Plazma',
       artist: '米津玄師',
       description: '米津玄師の人気曲。独特な世界観とメロディが魅力。',
-      image: getImagePath('images/plazma.jpg'),
+      image: getImagePath('images/fake_plazma.jpg'),
       rating: 5,
       link: 'https://youtu.be/fp3F6TqBsAU?si=J_xlGE4nXEVzOryK'
     },
@@ -59,7 +59,7 @@ const Interests: React.FC = () => {
       title: 'Soranji',
       artist: 'Mrs. GREEN APPLE',
       description: 'Mrs. GREEN APPLEの名曲。心に残る歌詞と美しいメロディ。',
-      image: getImagePath('images/soranji.jpg'),
+      image: getImagePath('images/fake_soranji.jpg'),
       rating: 5,
       link: 'https://youtu.be/44cICMd3jW4?si=N1CArp7x5-ej_0Eq'
     }
@@ -93,6 +93,7 @@ const Interests: React.FC = () => {
     }
   ];
 
+  
   // 星の評価を表示する関数
   const renderStars = (rating: number) => {
     return (
@@ -166,28 +167,9 @@ const Interests: React.FC = () => {
                   </div>
                 ))}
               </div>
-
-              {/* Spotifyプレイリストセクション */}
-              <div className="spotify-section">
-                <h3>🎧 お気に入りの邦楽リスト</h3>
-                <div className="spotify-playlists">
-                  <div className="spotify-embed">
-                    <iframe 
-                      src="https://open.spotify.com/embed/playlist/4j4DSGQHYOkLNt7ZvTEvZa?utm_source=generator" 
-                      width="100%" 
-                      height="352" 
-                      frameBorder="0" 
-                      allowFullScreen 
-                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                      loading="lazy"
-                      title="Spotify Playlist">
-                    </iframe>
-                  </div>
-                </div>
-              </div>
             </div>
           )}
-          
+
           {/* 趣味タブが選択されている場合 */}
           {activeTab === 'hobbies' && (
             <div className="hobbies-content fade-in">

@@ -120,7 +120,7 @@ const News: React.FC = () => {
         <div className="news__grid">
           {filteredNews.length > 0 ? (
             filteredNews.map((item) => (
-              <div key={item.id} className="news-item">
+              <div key={item.id} className={`news-item ${item.id === 1 ? 'news-item--featured' : ''}`}>
                 <div className="news-date">{item.date}</div>
                 <h3 className="news-title">{item.title}</h3>
                 <p className="news-content">{item.content}</p>

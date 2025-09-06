@@ -108,7 +108,7 @@ const About: React.FC = () => {
             className={`tab-button ${activeTab === 'experience' ? 'tab-button--active' : ''}`}
             onClick={() => setActiveTab('experience')}
           >
-            経歴
+            出来事
           </button>
         </div>
 
@@ -164,6 +164,7 @@ const About: React.FC = () => {
               <h2>モチベーション</h2>
               <p className="skills-description">
                 僕の好きなゲームを中心に作成しました。
+                最近はLeague of Legendsばかりやっています。
               </p>
               
               <div className="skills-grid">
@@ -192,7 +193,7 @@ const About: React.FC = () => {
             <div className="experience-content fade-in">
               <h2>私の人生</h2>
               <p className="experience-description">
-                最近の出来事。
+                最近の出来事をまとめました。
               </p>
               
               <div className="timeline">
